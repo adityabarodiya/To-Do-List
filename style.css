@@ -112,3 +112,8 @@ ul li span:hover{
     background-color: rgb(60, 8, 8);
     color: white;
 }
+
+.profile{
+    color: white;
+    text-align: center;
+}
