@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #2c0123,#013551);
+  padding: 10px;
+}
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.todo-app h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.row {
+  display: flex;
+  
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+  font-size: medium;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  height: auto;
+  width: 20%;
+  
+  background-color: transparent;
+  color: black;
+  border: solid;
+  width: au;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 40px;
+}
+
+.btn:hover {
+    background-color: rgb(60, 8, 8);
+    color: white;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 15px 8px 12px 50px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(assests/icons8-unchecked-checkbox-50.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked{
+    color: #554;
+    text-decoration: line-through;
+
+}
+ul li.checked::before{
+    background-image: url(assests/icons8-checked-checkbox-50.png);
+    
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background-color: rgb(60, 8, 8);
+    color: white;
+}
+
+.profile{
+    color: white;
+    text-align: center;
+}
+
+
+
+@media (max-width: 450px){
+  
+  .btn{
+    width: 25%;
+    height: 5vh;
+    text-align: center;
+
+  }
+}
