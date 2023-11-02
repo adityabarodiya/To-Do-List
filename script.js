@@ -30,6 +30,7 @@ list.addEventListener("click", (e) => {
     }
 },false)
 
+// for saving on local storage
 
 function saveData (){
     localStorage.setItem("data", list.innerHTML);
